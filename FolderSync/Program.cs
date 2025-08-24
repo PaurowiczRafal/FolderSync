@@ -1,7 +1,6 @@
 ﻿
 using FolderSync;
 using System.Diagnostics;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 class Program
 {
@@ -57,7 +56,6 @@ class Program
 
     static void ArgsParser(string[] args)
     {
-        Console.WriteLine("ArgsPArser");
         for (int i = 0; i < args.Length; i++)
         {
             var a = args[i];
