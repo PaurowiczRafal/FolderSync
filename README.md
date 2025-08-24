@@ -1,7 +1,7 @@
 Program that synchronizes one-way, periodically folder source to folder replica
 
 # Example of windows run in terminal
-FolderSync.exe "C:\Users\FolderSync\source" "C:\Users\FolderSync\replica" 15 "C:\Users\FolderSync\log.txt"
+FolderSync.exe -s "C:\Users\FolderSync\source" -r "C:\Users\FolderSync\replica" -i 15 -l "C:\Users\FolderSync\log.txt"
 
 # Notes
 - source folder, replica folder & log file are created if missing, and has default paths
