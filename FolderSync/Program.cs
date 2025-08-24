@@ -7,9 +7,9 @@ class Program
     static async Task Main(string[] args)
     {
         //Default paths and interval
-        string sourceFolderPathDefault = @"C:\Users\admin\Documents\Test\source";
-        string replicaFolderPathDefault = @"C:\Users\admin\Documents\Test\replica";
-        string logFilePathDefault = @"C:\Users\admin\Documents\Test\Log.txt";
+        string sourceFolderPathDefault = @"C:\Users\admin\Documents\FolderSync\source";
+        string replicaFolderPathDefault = @"C:\Users\admin\Documents\FolderSync\replica";
+        string logFilePathDefault = @"C:\Users\admin\Documents\FolderSync\Log.txt";
         int intervalDefault = 10;
 
 
@@ -51,7 +51,7 @@ class Program
         await Logger.LogAsync($"Replica folder path: {replicaPath}");
         await Logger.LogAsync($"Log file path: {logFilePath}");
         await Logger.LogAsync($"Synchornization interval: {interval} seconds.");
-        await Logger.LogAsync("Press CTRL + c, to stop synchronizing and exit.");
+        await Logger.LogAsync("Press CTRL + C, to stop synchronizing and exit.");
 
         SyncHandler syncHandle = new SyncHandler();
         await syncHandle.SyncHandleInit(sourcePath, replicaPath);
